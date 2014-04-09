@@ -22,6 +22,7 @@
 	}
 
 	self.ID = LightName.hash;
+	_ambientLightColor = GLKVector4Make(1, 1, 1, 1);
 	_diffuseLightColor = GLKVector4Make(1, 1, 1, 1);
 	_diffuseLightVector = GLKVector3Make(0, 0, 1);
 

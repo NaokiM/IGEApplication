@@ -8,8 +8,8 @@
 
 #import "ViewController.h"
 #import "Library/IGEGlobal.h"
-#import "System/IGELineShader.h"
-#import "System/IGEPrimitiveShader.h"
+#import "System/IGEAmbientShader.h"
+#import "System/IGELambertShader.h"
 #import "System/IGEBootScene.h"
 
 @interface ViewController () {
@@ -56,10 +56,10 @@
 	
 	// シェーダの作成と追加
 	IGEShader* shader;
-	shader = [[IGELineShader alloc] initWithName:@"LineShader"];
+	shader = [[IGEAmbientShader alloc] initWithName:@"AmbientShader"];
 	IGE_NULL_ASSERT(shader);
 	[[IGEShaderManager getInstance] addShader:shader];
-	shader = [[IGEPrimitiveShader alloc] initWithName:@"PrimitiveShader"];
+	shader = [[IGELambertShader alloc] initWithName:@"LambertShader"];
 	IGE_NULL_ASSERT(shader);
 	[[IGEShaderManager getInstance] addShader:shader];
 	

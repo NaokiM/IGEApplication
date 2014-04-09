@@ -87,6 +87,7 @@
 		[shader setUniformWorldMatrix:unit.worldMatrix];
 		[shader setUniformViewMatrix:camera.viewMatrix];
 		[shader setUniformProjectionMatrix:camera.projectionMatrix];
+		[shader setUniformAmbientLightColor:light.ambientLightColor];
 		[shader setUniformDiffuseLightColor:light.diffuseLightColor];
 		[shader setUniformDiffuseLightVector:light.diffuseLightVector worldMatrix:unit.worldMatrix];
 

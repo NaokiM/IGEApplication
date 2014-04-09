@@ -14,7 +14,8 @@
 NS_ENUM(NSInteger, IGEVertexAttrib) {
 	IGEVertexAttribPosition = 0,
 	IGEVertexAttribNormal,
-	IGEVertexAttribColor,
+	IGEVertexAttribAmbientColor,
+	IGEVertexAttribDiffuseColor,
 	IGEVertexAttribTexCoord0,
 	IGEVertexAttribTexCoord1,
 	IGEVertexAttribMax
@@ -25,6 +26,7 @@ NS_ENUM(NSInteger, IGEShaderUniform) {
 	IGEShaderUniformWorldMatrix = 0,
 	IGEShaderUniformViewMatrix,
 	IGEShaderUniformProjectionMatrix,
+	IGEShaderUniformAmbientLightColor,
 	IGEShaderUniformDiffuseLightColor,
 	IGEShaderUniformDiffuseLightVector,
 	IGEShaderUniformMax
@@ -43,6 +45,7 @@ NS_ENUM(NSInteger, IGEShaderUniform) {
 - (void)setUniformWorldMatrix:(const GLKMatrix4)matrix;
 - (void)setUniformViewMatrix:(const GLKMatrix4)matrix;
 - (void)setUniformProjectionMatrix:(const GLKMatrix4)matrix;
+- (void)setUniformAmbientLightColor:(const GLKVector4)color;
 - (void)setUniformDiffuseLightColor:(const GLKVector4)color;
 - (void)setUniformDiffuseLightVector:(const GLKVector3)vector worldMatrix:(const GLKMatrix4)worldMatrix;
 

@@ -118,7 +118,7 @@
 {
     glBindAttribLocation(_program, IGEVertexAttribPosition, "position");
     glBindAttribLocation(_program, IGEVertexAttribNormal, "normal");
-    glBindAttribLocation(_program, IGEVertexAttribColor, "color");
+    glBindAttribLocation(_program, IGEVertexAttribAmbientColor, "ambientColor");
 }
 
 - (void)getUniformLocations:(GLuint)program
@@ -126,8 +126,7 @@
     _uniforms[IGEShaderUniformWorldMatrix] = glGetUniformLocation(_program, "worldMatrix");
     _uniforms[IGEShaderUniformViewMatrix] = glGetUniformLocation(_program, "viewMatrix");
     _uniforms[IGEShaderUniformProjectionMatrix] = glGetUniformLocation(_program, "projectionMatrix");
-    _uniforms[IGEShaderUniformDiffuseLightColor] = glGetUniformLocation(_program, "diffuseLightColor");
-    _uniforms[IGEShaderUniformDiffuseLightVector] = glGetUniformLocation(_program, "diffuseLightVector");
+    _uniforms[IGEShaderUniformAmbientLightColor] = glGetUniformLocation(_program, "ambientLightColor");
 }
 
 - (BOOL)compileShader:(GLuint*)shader type:(GLenum)type file:(NSString*)file
@@ -227,6 +226,11 @@
 - (void)setUniformProjectionMatrix:(const GLKMatrix4)matrix
 {
     glUniformMatrix4fv(_uniforms[IGEShaderUniformProjectionMatrix], 1, 0, matrix.m);
+}
+
+- (void)setUniformAmbientLightColor:(const GLKVector4)color
+{
+    glUniform4fv(_uniforms[IGEShaderUniformAmbientLightColor], 1, color.v);
 }
 
 - (void)setUniformDiffuseLightColor:(const GLKVector4)color

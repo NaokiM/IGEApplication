@@ -48,8 +48,8 @@
 	
 	glEnableVertexAttribArray(IGEVertexAttribPosition);
 	glVertexAttribPointer(IGEVertexAttribPosition, 3, GL_FLOAT, GL_FALSE, 7*sizeof(float), IGE_BUFFER_OFFSET(0));
-	glEnableVertexAttribArray(IGEVertexAttribColor);
-	glVertexAttribPointer(IGEVertexAttribColor, 4, GL_FLOAT, GL_FALSE, 7*sizeof(float), IGE_BUFFER_OFFSET(3*sizeof(float)));
+	glEnableVertexAttribArray(IGEVertexAttribAmbientColor);
+	glVertexAttribPointer(IGEVertexAttribAmbientColor, 4, GL_FLOAT, GL_FALSE, 7*sizeof(float), IGE_BUFFER_OFFSET(3*sizeof(float)));
 	
 	glBindVertexArrayOES(0);
 	

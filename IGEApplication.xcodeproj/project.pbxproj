@@ -43,13 +43,13 @@
 		B098AFC018F40D1600A7C316 /* IGEUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = B098AFAC18F40D1600A7C316 /* IGEUnit.m */; };
 		B098AFC118F40D1600A7C316 /* IGEUnitManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B098AFAE18F40D1600A7C316 /* IGEUnitManager.m */; };
 		B098AFCB18F40D2200A7C316 /* IGEBootScene.m in Sources */ = {isa = PBXBuildFile; fileRef = B098AFC418F40D2200A7C316 /* IGEBootScene.m */; };
-		B098AFCC18F40D2200A7C316 /* IGELineShader.m in Sources */ = {isa = PBXBuildFile; fileRef = B098AFC618F40D2200A7C316 /* IGELineShader.m */; };
-		B098AFCD18F40D2200A7C316 /* IGEPrimitiveShader.m in Sources */ = {isa = PBXBuildFile; fileRef = B098AFC818F40D2200A7C316 /* IGEPrimitiveShader.m */; };
+		B098AFCC18F40D2200A7C316 /* IGEAmbientShader.m in Sources */ = {isa = PBXBuildFile; fileRef = B098AFC618F40D2200A7C316 /* IGEAmbientShader.m */; };
+		B098AFCD18F40D2200A7C316 /* IGELambertShader.m in Sources */ = {isa = PBXBuildFile; fileRef = B098AFC818F40D2200A7C316 /* IGELambertShader.m */; };
 		B098AFCE18F40D2200A7C316 /* IGETestUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = B098AFCA18F40D2200A7C316 /* IGETestUnit.m */; };
-		B098AFD418F40D2D00A7C316 /* LineShader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = B098AFD018F40D2D00A7C316 /* LineShader.fsh */; };
-		B098AFD518F40D2D00A7C316 /* LineShader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = B098AFD118F40D2D00A7C316 /* LineShader.vsh */; };
-		B098AFD618F40D2D00A7C316 /* PrimitiveShader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = B098AFD218F40D2D00A7C316 /* PrimitiveShader.fsh */; };
-		B098AFD718F40D2D00A7C316 /* PrimitiveShader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = B098AFD318F40D2D00A7C316 /* PrimitiveShader.vsh */; };
+		B098AFD418F40D2D00A7C316 /* AmbientShader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = B098AFD018F40D2D00A7C316 /* AmbientShader.fsh */; };
+		B098AFD518F40D2D00A7C316 /* AmbientShader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = B098AFD118F40D2D00A7C316 /* AmbientShader.vsh */; };
+		B098AFD618F40D2D00A7C316 /* LambertShader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = B098AFD218F40D2D00A7C316 /* LambertShader.fsh */; };
+		B098AFD718F40D2D00A7C316 /* LambertShader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = B098AFD318F40D2D00A7C316 /* LambertShader.vsh */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -126,16 +126,16 @@
 		B098AFAE18F40D1600A7C316 /* IGEUnitManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IGEUnitManager.m; sourceTree = "<group>"; };
 		B098AFC318F40D2200A7C316 /* IGEBootScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IGEBootScene.h; sourceTree = "<group>"; };
 		B098AFC418F40D2200A7C316 /* IGEBootScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IGEBootScene.m; sourceTree = "<group>"; };
-		B098AFC518F40D2200A7C316 /* IGELineShader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IGELineShader.h; sourceTree = "<group>"; };
-		B098AFC618F40D2200A7C316 /* IGELineShader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IGELineShader.m; sourceTree = "<group>"; };
-		B098AFC718F40D2200A7C316 /* IGEPrimitiveShader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IGEPrimitiveShader.h; sourceTree = "<group>"; };
-		B098AFC818F40D2200A7C316 /* IGEPrimitiveShader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IGEPrimitiveShader.m; sourceTree = "<group>"; };
+		B098AFC518F40D2200A7C316 /* IGEAmbientShader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IGEAmbientShader.h; sourceTree = "<group>"; };
+		B098AFC618F40D2200A7C316 /* IGEAmbientShader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IGEAmbientShader.m; sourceTree = "<group>"; };
+		B098AFC718F40D2200A7C316 /* IGELambertShader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IGELambertShader.h; sourceTree = "<group>"; };
+		B098AFC818F40D2200A7C316 /* IGELambertShader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IGELambertShader.m; sourceTree = "<group>"; };
 		B098AFC918F40D2200A7C316 /* IGETestUnit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IGETestUnit.h; sourceTree = "<group>"; };
 		B098AFCA18F40D2200A7C316 /* IGETestUnit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IGETestUnit.m; sourceTree = "<group>"; };
-		B098AFD018F40D2D00A7C316 /* LineShader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = LineShader.fsh; sourceTree = "<group>"; };
-		B098AFD118F40D2D00A7C316 /* LineShader.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = LineShader.vsh; sourceTree = "<group>"; };
-		B098AFD218F40D2D00A7C316 /* PrimitiveShader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = PrimitiveShader.fsh; sourceTree = "<group>"; };
-		B098AFD318F40D2D00A7C316 /* PrimitiveShader.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = PrimitiveShader.vsh; sourceTree = "<group>"; };
+		B098AFD018F40D2D00A7C316 /* AmbientShader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = AmbientShader.fsh; sourceTree = "<group>"; };
+		B098AFD118F40D2D00A7C316 /* AmbientShader.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = AmbientShader.vsh; sourceTree = "<group>"; };
+		B098AFD218F40D2D00A7C316 /* LambertShader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = LambertShader.fsh; sourceTree = "<group>"; };
+		B098AFD318F40D2D00A7C316 /* LambertShader.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = LambertShader.vsh; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -277,10 +277,10 @@
 		B098AFCF18F40D2D00A7C316 /* Shaders */ = {
 			isa = PBXGroup;
 			children = (
-				B098AFD118F40D2D00A7C316 /* LineShader.vsh */,
-				B098AFD018F40D2D00A7C316 /* LineShader.fsh */,
-				B098AFD218F40D2D00A7C316 /* PrimitiveShader.fsh */,
-				B098AFD318F40D2D00A7C316 /* PrimitiveShader.vsh */,
+				B098AFD118F40D2D00A7C316 /* AmbientShader.vsh */,
+				B098AFD018F40D2D00A7C316 /* AmbientShader.fsh */,
+				B098AFD318F40D2D00A7C316 /* LambertShader.vsh */,
+				B098AFD218F40D2D00A7C316 /* LambertShader.fsh */,
 			);
 			path = Shaders;
 			sourceTree = "<group>";
@@ -419,10 +419,10 @@
 		B098AFE518F410AC00A7C316 /* Shader */ = {
 			isa = PBXGroup;
 			children = (
-				B098AFC518F40D2200A7C316 /* IGELineShader.h */,
-				B098AFC618F40D2200A7C316 /* IGELineShader.m */,
-				B098AFC718F40D2200A7C316 /* IGEPrimitiveShader.h */,
-				B098AFC818F40D2200A7C316 /* IGEPrimitiveShader.m */,
+				B098AFC518F40D2200A7C316 /* IGEAmbientShader.h */,
+				B098AFC618F40D2200A7C316 /* IGEAmbientShader.m */,
+				B098AFC718F40D2200A7C316 /* IGELambertShader.h */,
+				B098AFC818F40D2200A7C316 /* IGELambertShader.m */,
 			);
 			name = Shader;
 			sourceTree = "<group>";
@@ -503,11 +503,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B098AFD618F40D2D00A7C316 /* PrimitiveShader.fsh in Resources */,
-				B098AFD418F40D2D00A7C316 /* LineShader.fsh in Resources */,
-				B098AFD718F40D2D00A7C316 /* PrimitiveShader.vsh in Resources */,
+				B098AFD618F40D2D00A7C316 /* LambertShader.fsh in Resources */,
+				B098AFD418F40D2D00A7C316 /* AmbientShader.fsh in Resources */,
+				B098AFD718F40D2D00A7C316 /* LambertShader.vsh in Resources */,
 				B098AF6A18F40BEA00A7C316 /* Images.xcassets in Resources */,
-				B098AFD518F40D2D00A7C316 /* LineShader.vsh in Resources */,
+				B098AFD518F40D2D00A7C316 /* AmbientShader.vsh in Resources */,
 				B098AF5818F40BEA00A7C316 /* InfoPlist.strings in Resources */,
 				B098AF6118F40BEA00A7C316 /* Main.storyboard in Resources */,
 			);
@@ -550,9 +550,9 @@
 				B098AFB818F40D1600A7C316 /* IGEProfiler.m in Sources */,
 				B098AFB418F40D1600A7C316 /* IGELightManager.m in Sources */,
 				B098AFB218F40D1600A7C316 /* IGEFramework.m in Sources */,
-				B098AFCD18F40D2200A7C316 /* IGEPrimitiveShader.m in Sources */,
+				B098AFCD18F40D2200A7C316 /* IGELambertShader.m in Sources */,
 				B098AFB718F40D1600A7C316 /* IGEObject.m in Sources */,
-				B098AFCC18F40D2200A7C316 /* IGELineShader.m in Sources */,
+				B098AFCC18F40D2200A7C316 /* IGEAmbientShader.m in Sources */,
 				B098AFB518F40D1600A7C316 /* IGELineStream.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

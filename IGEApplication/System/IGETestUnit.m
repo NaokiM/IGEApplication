@@ -73,7 +73,7 @@ GLfloat gCubeVertexData[360] =
 
 	self.cameraID = @"DefaultCamera".hash;
 	self.lightID = @"DefaultLight".hash;
-	self.shaderID = @"PrimitiveShader".hash;
+	self.shaderID = @"AmbientShader".hash;
 	
 	glGenVertexArraysOES(1, &_vertexArray);
 	glBindVertexArrayOES(_vertexArray);
@@ -86,8 +86,8 @@ GLfloat gCubeVertexData[360] =
 	glVertexAttribPointer(IGEVertexAttribPosition, 3, GL_FLOAT, GL_FALSE, 10*sizeof(float), IGE_BUFFER_OFFSET(0*sizeof(float)));
 	glEnableVertexAttribArray(IGEVertexAttribNormal);
 	glVertexAttribPointer(IGEVertexAttribNormal, 3, GL_FLOAT, GL_FALSE, 10*sizeof(float), IGE_BUFFER_OFFSET(3*sizeof(float)));
-	glEnableVertexAttribArray(IGEVertexAttribColor);
-	glVertexAttribPointer(IGEVertexAttribColor, 4, GL_FLOAT, GL_FALSE, 10*sizeof(float), IGE_BUFFER_OFFSET(6*sizeof(float)));
+	glEnableVertexAttribArray(IGEVertexAttribAmbientColor);
+	glVertexAttribPointer(IGEVertexAttribAmbientColor, 4, GL_FLOAT, GL_FALSE, 10*sizeof(float), IGE_BUFFER_OFFSET(6*sizeof(float)));
 	
 	glBindVertexArrayOES(0);
 	

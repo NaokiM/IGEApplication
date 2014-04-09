@@ -12,6 +12,7 @@
 @interface IGELight : IGEObject {
 }
 
+@property (assign, nonatomic) GLKVector4 ambientLightColor;
 @property (assign, nonatomic) GLKVector4 diffuseLightColor;
 @property (assign, nonatomic) GLKVector3 diffuseLightVector;
 
