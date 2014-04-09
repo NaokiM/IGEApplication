@@ -277,8 +277,8 @@
 		B098AFCF18F40D2D00A7C316 /* Shaders */ = {
 			isa = PBXGroup;
 			children = (
-				B098AFD018F40D2D00A7C316 /* LineShader.fsh */,
 				B098AFD118F40D2D00A7C316 /* LineShader.vsh */,
+				B098AFD018F40D2D00A7C316 /* LineShader.fsh */,
 				B098AFD218F40D2D00A7C316 /* PrimitiveShader.fsh */,
 				B098AFD318F40D2D00A7C316 /* PrimitiveShader.vsh */,
 			);
@@ -760,6 +760,7 @@
 				B098AF8218F40BEA00A7C316 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B098AF8318F40BEA00A7C316 /* Build configuration list for PBXNativeTarget "IGEApplicationTests" */ = {
 			isa = XCConfigurationList;
@@ -768,6 +769,7 @@
 				B098AF8518F40BEA00A7C316 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
