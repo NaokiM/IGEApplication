@@ -1,0 +1,775 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B098AF4A18F40BEA00A7C316 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B098AF4918F40BEA00A7C316 /* Foundation.framework */; };
+		B098AF4C18F40BEA00A7C316 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B098AF4B18F40BEA00A7C316 /* CoreGraphics.framework */; };
+		B098AF4E18F40BEA00A7C316 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B098AF4D18F40BEA00A7C316 /* UIKit.framework */; };
+		B098AF5018F40BEA00A7C316 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B098AF4F18F40BEA00A7C316 /* GLKit.framework */; };
+		B098AF5218F40BEA00A7C316 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B098AF5118F40BEA00A7C316 /* OpenGLES.framework */; };
+		B098AF5818F40BEA00A7C316 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B098AF5618F40BEA00A7C316 /* InfoPlist.strings */; };
+		B098AF5A18F40BEA00A7C316 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B098AF5918F40BEA00A7C316 /* main.m */; };
+		B098AF5E18F40BEA00A7C316 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B098AF5D18F40BEA00A7C316 /* AppDelegate.m */; };
+		B098AF6118F40BEA00A7C316 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B098AF5F18F40BEA00A7C316 /* Main.storyboard */; };
+		B098AF6818F40BEA00A7C316 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B098AF6718F40BEA00A7C316 /* ViewController.m */; };
+		B098AF6A18F40BEA00A7C316 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B098AF6918F40BEA00A7C316 /* Images.xcassets */; };
+		B098AF7118F40BEA00A7C316 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B098AF7018F40BEA00A7C316 /* XCTest.framework */; };
+		B098AF7218F40BEA00A7C316 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B098AF4918F40BEA00A7C316 /* Foundation.framework */; };
+		B098AF7318F40BEA00A7C316 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B098AF4D18F40BEA00A7C316 /* UIKit.framework */; };
+		B098AF7B18F40BEA00A7C316 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B098AF7918F40BEA00A7C316 /* InfoPlist.strings */; };
+		B098AF7D18F40BEA00A7C316 /* IGEApplicationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B098AF7C18F40BEA00A7C316 /* IGEApplicationTests.m */; };
+		B098AFAF18F40D1600A7C316 /* IGECamera.m in Sources */ = {isa = PBXBuildFile; fileRef = B098AF8818F40D1600A7C316 /* IGECamera.m */; };
+		B098AFB018F40D1600A7C316 /* IGECameraManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B098AF8A18F40D1600A7C316 /* IGECameraManager.m */; };
+		B098AFB118F40D1600A7C316 /* IGEFps.m in Sources */ = {isa = PBXBuildFile; fileRef = B098AF8D18F40D1600A7C316 /* IGEFps.m */; };
+		B098AFB218F40D1600A7C316 /* IGEFramework.m in Sources */ = {isa = PBXBuildFile; fileRef = B098AF8F18F40D1600A7C316 /* IGEFramework.m */; };
+		B098AFB318F40D1600A7C316 /* IGELight.m in Sources */ = {isa = PBXBuildFile; fileRef = B098AF9218F40D1600A7C316 /* IGELight.m */; };
+		B098AFB418F40D1600A7C316 /* IGELightManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B098AF9418F40D1600A7C316 /* IGELightManager.m */; };
+		B098AFB518F40D1600A7C316 /* IGELineStream.m in Sources */ = {isa = PBXBuildFile; fileRef = B098AF9618F40D1600A7C316 /* IGELineStream.m */; };
+		B098AFB618F40D1600A7C316 /* IGEMath.m in Sources */ = {isa = PBXBuildFile; fileRef = B098AF9818F40D1600A7C316 /* IGEMath.m */; };
+		B098AFB718F40D1600A7C316 /* IGEObject.m in Sources */ = {isa = PBXBuildFile; fileRef = B098AF9A18F40D1600A7C316 /* IGEObject.m */; };
+		B098AFB818F40D1600A7C316 /* IGEProfiler.m in Sources */ = {isa = PBXBuildFile; fileRef = B098AF9C18F40D1600A7C316 /* IGEProfiler.m */; };
+		B098AFB918F40D1600A7C316 /* IGERenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = B098AF9E18F40D1600A7C316 /* IGERenderer.m */; };
+		B098AFBA18F40D1600A7C316 /* IGEScene.m in Sources */ = {isa = PBXBuildFile; fileRef = B098AFA018F40D1600A7C316 /* IGEScene.m */; };
+		B098AFBB18F40D1600A7C316 /* IGESceneManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B098AFA218F40D1600A7C316 /* IGESceneManager.m */; };
+		B098AFBC18F40D1600A7C316 /* IGEShader.m in Sources */ = {isa = PBXBuildFile; fileRef = B098AFA418F40D1600A7C316 /* IGEShader.m */; };
+		B098AFBD18F40D1600A7C316 /* IGEShaderManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B098AFA618F40D1600A7C316 /* IGEShaderManager.m */; };
+		B098AFBE18F40D1600A7C316 /* IGESingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = B098AFA818F40D1600A7C316 /* IGESingleton.m */; };
+		B098AFBF18F40D1600A7C316 /* IGETouchManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B098AFAA18F40D1600A7C316 /* IGETouchManager.m */; };
+		B098AFC018F40D1600A7C316 /* IGEUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = B098AFAC18F40D1600A7C316 /* IGEUnit.m */; };
+		B098AFC118F40D1600A7C316 /* IGEUnitManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B098AFAE18F40D1600A7C316 /* IGEUnitManager.m */; };
+		B098AFCB18F40D2200A7C316 /* IGEBootScene.m in Sources */ = {isa = PBXBuildFile; fileRef = B098AFC418F40D2200A7C316 /* IGEBootScene.m */; };
+		B098AFCC18F40D2200A7C316 /* IGELineShader.m in Sources */ = {isa = PBXBuildFile; fileRef = B098AFC618F40D2200A7C316 /* IGELineShader.m */; };
+		B098AFCD18F40D2200A7C316 /* IGEPrimitiveShader.m in Sources */ = {isa = PBXBuildFile; fileRef = B098AFC818F40D2200A7C316 /* IGEPrimitiveShader.m */; };
+		B098AFCE18F40D2200A7C316 /* IGETestUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = B098AFCA18F40D2200A7C316 /* IGETestUnit.m */; };
+		B098AFD418F40D2D00A7C316 /* LineShader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = B098AFD018F40D2D00A7C316 /* LineShader.fsh */; };
+		B098AFD518F40D2D00A7C316 /* LineShader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = B098AFD118F40D2D00A7C316 /* LineShader.vsh */; };
+		B098AFD618F40D2D00A7C316 /* PrimitiveShader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = B098AFD218F40D2D00A7C316 /* PrimitiveShader.fsh */; };
+		B098AFD718F40D2D00A7C316 /* PrimitiveShader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = B098AFD318F40D2D00A7C316 /* PrimitiveShader.vsh */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B098AF7418F40BEA00A7C316 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B098AF3E18F40BEA00A7C316 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B098AF4518F40BEA00A7C316;
+			remoteInfo = IGEApplication;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B098AF4618F40BEA00A7C316 /* IGEApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IGEApplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B098AF4918F40BEA00A7C316 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B098AF4B18F40BEA00A7C316 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B098AF4D18F40BEA00A7C316 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B098AF4F18F40BEA00A7C316 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		B098AF5118F40BEA00A7C316 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		B098AF5518F40BEA00A7C316 /* IGEApplication-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IGEApplication-Info.plist"; sourceTree = "<group>"; };
+		B098AF5718F40BEA00A7C316 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B098AF5918F40BEA00A7C316 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B098AF5B18F40BEA00A7C316 /* IGEApplication-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IGEApplication-Prefix.pch"; sourceTree = "<group>"; };
+		B098AF5C18F40BEA00A7C316 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B098AF5D18F40BEA00A7C316 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B098AF6018F40BEA00A7C316 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B098AF6618F40BEA00A7C316 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B098AF6718F40BEA00A7C316 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B098AF6918F40BEA00A7C316 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B098AF6F18F40BEA00A7C316 /* IGEApplicationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IGEApplicationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B098AF7018F40BEA00A7C316 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		B098AF7818F40BEA00A7C316 /* IGEApplicationTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IGEApplicationTests-Info.plist"; sourceTree = "<group>"; };
+		B098AF7A18F40BEA00A7C316 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B098AF7C18F40BEA00A7C316 /* IGEApplicationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IGEApplicationTests.m; sourceTree = "<group>"; };
+		B098AF8718F40D1600A7C316 /* IGECamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IGECamera.h; sourceTree = "<group>"; };
+		B098AF8818F40D1600A7C316 /* IGECamera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IGECamera.m; sourceTree = "<group>"; };
+		B098AF8918F40D1600A7C316 /* IGECameraManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IGECameraManager.h; sourceTree = "<group>"; };
+		B098AF8A18F40D1600A7C316 /* IGECameraManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IGECameraManager.m; sourceTree = "<group>"; };
+		B098AF8B18F40D1600A7C316 /* IGECommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IGECommon.h; sourceTree = "<group>"; };
+		B098AF8C18F40D1600A7C316 /* IGEFps.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IGEFps.h; sourceTree = "<group>"; };
+		B098AF8D18F40D1600A7C316 /* IGEFps.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IGEFps.m; sourceTree = "<group>"; };
+		B098AF8E18F40D1600A7C316 /* IGEFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IGEFramework.h; sourceTree = "<group>"; };
+		B098AF8F18F40D1600A7C316 /* IGEFramework.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IGEFramework.m; sourceTree = "<group>"; };
+		B098AF9018F40D1600A7C316 /* IGEGlobal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IGEGlobal.h; sourceTree = "<group>"; };
+		B098AF9118F40D1600A7C316 /* IGELight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IGELight.h; sourceTree = "<group>"; };
+		B098AF9218F40D1600A7C316 /* IGELight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IGELight.m; sourceTree = "<group>"; };
+		B098AF9318F40D1600A7C316 /* IGELightManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IGELightManager.h; sourceTree = "<group>"; };
+		B098AF9418F40D1600A7C316 /* IGELightManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IGELightManager.m; sourceTree = "<group>"; };
+		B098AF9518F40D1600A7C316 /* IGELineStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IGELineStream.h; sourceTree = "<group>"; };
+		B098AF9618F40D1600A7C316 /* IGELineStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IGELineStream.m; sourceTree = "<group>"; };
+		B098AF9718F40D1600A7C316 /* IGEMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IGEMath.h; sourceTree = "<group>"; };
+		B098AF9818F40D1600A7C316 /* IGEMath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IGEMath.m; sourceTree = "<group>"; };
+		B098AF9918F40D1600A7C316 /* IGEObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IGEObject.h; sourceTree = "<group>"; };
+		B098AF9A18F40D1600A7C316 /* IGEObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IGEObject.m; sourceTree = "<group>"; };
+		B098AF9B18F40D1600A7C316 /* IGEProfiler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IGEProfiler.h; sourceTree = "<group>"; };
+		B098AF9C18F40D1600A7C316 /* IGEProfiler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IGEProfiler.m; sourceTree = "<group>"; };
+		B098AF9D18F40D1600A7C316 /* IGERenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IGERenderer.h; sourceTree = "<group>"; };
+		B098AF9E18F40D1600A7C316 /* IGERenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IGERenderer.m; sourceTree = "<group>"; };
+		B098AF9F18F40D1600A7C316 /* IGEScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IGEScene.h; sourceTree = "<group>"; };
+		B098AFA018F40D1600A7C316 /* IGEScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IGEScene.m; sourceTree = "<group>"; };
+		B098AFA118F40D1600A7C316 /* IGESceneManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IGESceneManager.h; sourceTree = "<group>"; };
+		B098AFA218F40D1600A7C316 /* IGESceneManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IGESceneManager.m; sourceTree = "<group>"; };
+		B098AFA318F40D1600A7C316 /* IGEShader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IGEShader.h; sourceTree = "<group>"; };
+		B098AFA418F40D1600A7C316 /* IGEShader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IGEShader.m; sourceTree = "<group>"; };
+		B098AFA518F40D1600A7C316 /* IGEShaderManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IGEShaderManager.h; sourceTree = "<group>"; };
+		B098AFA618F40D1600A7C316 /* IGEShaderManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IGEShaderManager.m; sourceTree = "<group>"; };
+		B098AFA718F40D1600A7C316 /* IGESingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IGESingleton.h; sourceTree = "<group>"; };
+		B098AFA818F40D1600A7C316 /* IGESingleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IGESingleton.m; sourceTree = "<group>"; };
+		B098AFA918F40D1600A7C316 /* IGETouchManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IGETouchManager.h; sourceTree = "<group>"; };
+		B098AFAA18F40D1600A7C316 /* IGETouchManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IGETouchManager.m; sourceTree = "<group>"; };
+		B098AFAB18F40D1600A7C316 /* IGEUnit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IGEUnit.h; sourceTree = "<group>"; };
+		B098AFAC18F40D1600A7C316 /* IGEUnit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IGEUnit.m; sourceTree = "<group>"; };
+		B098AFAD18F40D1600A7C316 /* IGEUnitManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IGEUnitManager.h; sourceTree = "<group>"; };
+		B098AFAE18F40D1600A7C316 /* IGEUnitManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IGEUnitManager.m; sourceTree = "<group>"; };
+		B098AFC318F40D2200A7C316 /* IGEBootScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IGEBootScene.h; sourceTree = "<group>"; };
+		B098AFC418F40D2200A7C316 /* IGEBootScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IGEBootScene.m; sourceTree = "<group>"; };
+		B098AFC518F40D2200A7C316 /* IGELineShader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IGELineShader.h; sourceTree = "<group>"; };
+		B098AFC618F40D2200A7C316 /* IGELineShader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IGELineShader.m; sourceTree = "<group>"; };
+		B098AFC718F40D2200A7C316 /* IGEPrimitiveShader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IGEPrimitiveShader.h; sourceTree = "<group>"; };
+		B098AFC818F40D2200A7C316 /* IGEPrimitiveShader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IGEPrimitiveShader.m; sourceTree = "<group>"; };
+		B098AFC918F40D2200A7C316 /* IGETestUnit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IGETestUnit.h; sourceTree = "<group>"; };
+		B098AFCA18F40D2200A7C316 /* IGETestUnit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IGETestUnit.m; sourceTree = "<group>"; };
+		B098AFD018F40D2D00A7C316 /* LineShader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = LineShader.fsh; sourceTree = "<group>"; };
+		B098AFD118F40D2D00A7C316 /* LineShader.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = LineShader.vsh; sourceTree = "<group>"; };
+		B098AFD218F40D2D00A7C316 /* PrimitiveShader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = PrimitiveShader.fsh; sourceTree = "<group>"; };
+		B098AFD318F40D2D00A7C316 /* PrimitiveShader.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = PrimitiveShader.vsh; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B098AF4318F40BEA00A7C316 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B098AF5218F40BEA00A7C316 /* OpenGLES.framework in Frameworks */,
+				B098AF4C18F40BEA00A7C316 /* CoreGraphics.framework in Frameworks */,
+				B098AF4E18F40BEA00A7C316 /* UIKit.framework in Frameworks */,
+				B098AF5018F40BEA00A7C316 /* GLKit.framework in Frameworks */,
+				B098AF4A18F40BEA00A7C316 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B098AF6C18F40BEA00A7C316 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B098AF7118F40BEA00A7C316 /* XCTest.framework in Frameworks */,
+				B098AF7318F40BEA00A7C316 /* UIKit.framework in Frameworks */,
+				B098AF7218F40BEA00A7C316 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B098AF3D18F40BEA00A7C316 = {
+			isa = PBXGroup;
+			children = (
+				B098AF5318F40BEA00A7C316 /* IGEApplication */,
+				B098AF7618F40BEA00A7C316 /* IGEApplicationTests */,
+				B098AF4818F40BEA00A7C316 /* Frameworks */,
+				B098AF4718F40BEA00A7C316 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B098AF4718F40BEA00A7C316 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B098AF4618F40BEA00A7C316 /* IGEApplication.app */,
+				B098AF6F18F40BEA00A7C316 /* IGEApplicationTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B098AF4818F40BEA00A7C316 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B098AF4918F40BEA00A7C316 /* Foundation.framework */,
+				B098AF4B18F40BEA00A7C316 /* CoreGraphics.framework */,
+				B098AF4D18F40BEA00A7C316 /* UIKit.framework */,
+				B098AF4F18F40BEA00A7C316 /* GLKit.framework */,
+				B098AF5118F40BEA00A7C316 /* OpenGLES.framework */,
+				B098AF7018F40BEA00A7C316 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B098AF5318F40BEA00A7C316 /* IGEApplication */ = {
+			isa = PBXGroup;
+			children = (
+				B098AF5C18F40BEA00A7C316 /* AppDelegate.h */,
+				B098AF5D18F40BEA00A7C316 /* AppDelegate.m */,
+				B098AF5F18F40BEA00A7C316 /* Main.storyboard */,
+				B098AF6618F40BEA00A7C316 /* ViewController.h */,
+				B098AF6718F40BEA00A7C316 /* ViewController.m */,
+				B098AF8618F40D1600A7C316 /* Library */,
+				B098AFC218F40D2200A7C316 /* System */,
+				B098AFCF18F40D2D00A7C316 /* Shaders */,
+				B098AF6918F40BEA00A7C316 /* Images.xcassets */,
+				B098AF5418F40BEA00A7C316 /* Supporting Files */,
+			);
+			path = IGEApplication;
+			sourceTree = "<group>";
+		};
+		B098AF5418F40BEA00A7C316 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B098AF5518F40BEA00A7C316 /* IGEApplication-Info.plist */,
+				B098AF5618F40BEA00A7C316 /* InfoPlist.strings */,
+				B098AF5918F40BEA00A7C316 /* main.m */,
+				B098AF5B18F40BEA00A7C316 /* IGEApplication-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B098AF7618F40BEA00A7C316 /* IGEApplicationTests */ = {
+			isa = PBXGroup;
+			children = (
+				B098AF7C18F40BEA00A7C316 /* IGEApplicationTests.m */,
+				B098AF7718F40BEA00A7C316 /* Supporting Files */,
+			);
+			path = IGEApplicationTests;
+			sourceTree = "<group>";
+		};
+		B098AF7718F40BEA00A7C316 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B098AF7818F40BEA00A7C316 /* IGEApplicationTests-Info.plist */,
+				B098AF7918F40BEA00A7C316 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B098AF8618F40D1600A7C316 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				B098AFE218F40F7200A7C316 /* Math */,
+				B098AFE118F40F6D00A7C316 /* Utility */,
+				B098AFE018F40F6900A7C316 /* Profiler */,
+				B098AFDF18F40F6000A7C316 /* Object */,
+				B098AFDE18F40F5B00A7C316 /* Touch */,
+				B098AFDD18F40F5600A7C316 /* Camera */,
+				B098AFDC18F40F4E00A7C316 /* Light */,
+				B098AFDB18F40F2600A7C316 /* Shader */,
+				B098AFDA18F40F2100A7C316 /* Renderer */,
+				B098AFD918F40F1D00A7C316 /* Scene */,
+				B098AFD818F40F0400A7C316 /* Unit */,
+				B098AF9018F40D1600A7C316 /* IGEGlobal.h */,
+				B098AF8B18F40D1600A7C316 /* IGECommon.h */,
+				B098AF8E18F40D1600A7C316 /* IGEFramework.h */,
+				B098AF8F18F40D1600A7C316 /* IGEFramework.m */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		B098AFC218F40D2200A7C316 /* System */ = {
+			isa = PBXGroup;
+			children = (
+				B098AFE518F410AC00A7C316 /* Shader */,
+				B098AFE418F410A800A7C316 /* Scene */,
+				B098AFE318F410A400A7C316 /* Unit */,
+			);
+			path = System;
+			sourceTree = "<group>";
+		};
+		B098AFCF18F40D2D00A7C316 /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				B098AFD018F40D2D00A7C316 /* LineShader.fsh */,
+				B098AFD118F40D2D00A7C316 /* LineShader.vsh */,
+				B098AFD218F40D2D00A7C316 /* PrimitiveShader.fsh */,
+				B098AFD318F40D2D00A7C316 /* PrimitiveShader.vsh */,
+			);
+			path = Shaders;
+			sourceTree = "<group>";
+		};
+		B098AFD818F40F0400A7C316 /* Unit */ = {
+			isa = PBXGroup;
+			children = (
+				B098AFAB18F40D1600A7C316 /* IGEUnit.h */,
+				B098AFAC18F40D1600A7C316 /* IGEUnit.m */,
+				B098AFAD18F40D1600A7C316 /* IGEUnitManager.h */,
+				B098AFAE18F40D1600A7C316 /* IGEUnitManager.m */,
+			);
+			name = Unit;
+			sourceTree = "<group>";
+		};
+		B098AFD918F40F1D00A7C316 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				B098AF9F18F40D1600A7C316 /* IGEScene.h */,
+				B098AFA018F40D1600A7C316 /* IGEScene.m */,
+				B098AFA118F40D1600A7C316 /* IGESceneManager.h */,
+				B098AFA218F40D1600A7C316 /* IGESceneManager.m */,
+			);
+			name = Scene;
+			sourceTree = "<group>";
+		};
+		B098AFDA18F40F2100A7C316 /* Renderer */ = {
+			isa = PBXGroup;
+			children = (
+				B098AF9D18F40D1600A7C316 /* IGERenderer.h */,
+				B098AF9E18F40D1600A7C316 /* IGERenderer.m */,
+				B098AF9518F40D1600A7C316 /* IGELineStream.h */,
+				B098AF9618F40D1600A7C316 /* IGELineStream.m */,
+			);
+			name = Renderer;
+			sourceTree = "<group>";
+		};
+		B098AFDB18F40F2600A7C316 /* Shader */ = {
+			isa = PBXGroup;
+			children = (
+				B098AFA318F40D1600A7C316 /* IGEShader.h */,
+				B098AFA418F40D1600A7C316 /* IGEShader.m */,
+				B098AFA518F40D1600A7C316 /* IGEShaderManager.h */,
+				B098AFA618F40D1600A7C316 /* IGEShaderManager.m */,
+			);
+			name = Shader;
+			sourceTree = "<group>";
+		};
+		B098AFDC18F40F4E00A7C316 /* Light */ = {
+			isa = PBXGroup;
+			children = (
+				B098AF9118F40D1600A7C316 /* IGELight.h */,
+				B098AF9218F40D1600A7C316 /* IGELight.m */,
+				B098AF9318F40D1600A7C316 /* IGELightManager.h */,
+				B098AF9418F40D1600A7C316 /* IGELightManager.m */,
+			);
+			name = Light;
+			sourceTree = "<group>";
+		};
+		B098AFDD18F40F5600A7C316 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				B098AF8718F40D1600A7C316 /* IGECamera.h */,
+				B098AF8818F40D1600A7C316 /* IGECamera.m */,
+				B098AF8918F40D1600A7C316 /* IGECameraManager.h */,
+				B098AF8A18F40D1600A7C316 /* IGECameraManager.m */,
+			);
+			name = Camera;
+			sourceTree = "<group>";
+		};
+		B098AFDE18F40F5B00A7C316 /* Touch */ = {
+			isa = PBXGroup;
+			children = (
+				B098AFA918F40D1600A7C316 /* IGETouchManager.h */,
+				B098AFAA18F40D1600A7C316 /* IGETouchManager.m */,
+			);
+			name = Touch;
+			sourceTree = "<group>";
+		};
+		B098AFDF18F40F6000A7C316 /* Object */ = {
+			isa = PBXGroup;
+			children = (
+				B098AF9918F40D1600A7C316 /* IGEObject.h */,
+				B098AF9A18F40D1600A7C316 /* IGEObject.m */,
+			);
+			name = Object;
+			sourceTree = "<group>";
+		};
+		B098AFE018F40F6900A7C316 /* Profiler */ = {
+			isa = PBXGroup;
+			children = (
+				B098AF8C18F40D1600A7C316 /* IGEFps.h */,
+				B098AF8D18F40D1600A7C316 /* IGEFps.m */,
+				B098AF9B18F40D1600A7C316 /* IGEProfiler.h */,
+				B098AF9C18F40D1600A7C316 /* IGEProfiler.m */,
+			);
+			name = Profiler;
+			sourceTree = "<group>";
+		};
+		B098AFE118F40F6D00A7C316 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				B098AFA718F40D1600A7C316 /* IGESingleton.h */,
+				B098AFA818F40D1600A7C316 /* IGESingleton.m */,
+			);
+			name = Utility;
+			sourceTree = "<group>";
+		};
+		B098AFE218F40F7200A7C316 /* Math */ = {
+			isa = PBXGroup;
+			children = (
+				B098AF9718F40D1600A7C316 /* IGEMath.h */,
+				B098AF9818F40D1600A7C316 /* IGEMath.m */,
+			);
+			name = Math;
+			sourceTree = "<group>";
+		};
+		B098AFE318F410A400A7C316 /* Unit */ = {
+			isa = PBXGroup;
+			children = (
+				B098AFC918F40D2200A7C316 /* IGETestUnit.h */,
+				B098AFCA18F40D2200A7C316 /* IGETestUnit.m */,
+			);
+			name = Unit;
+			sourceTree = "<group>";
+		};
+		B098AFE418F410A800A7C316 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				B098AFC318F40D2200A7C316 /* IGEBootScene.h */,
+				B098AFC418F40D2200A7C316 /* IGEBootScene.m */,
+			);
+			name = Scene;
+			sourceTree = "<group>";
+		};
+		B098AFE518F410AC00A7C316 /* Shader */ = {
+			isa = PBXGroup;
+			children = (
+				B098AFC518F40D2200A7C316 /* IGELineShader.h */,
+				B098AFC618F40D2200A7C316 /* IGELineShader.m */,
+				B098AFC718F40D2200A7C316 /* IGEPrimitiveShader.h */,
+				B098AFC818F40D2200A7C316 /* IGEPrimitiveShader.m */,
+			);
+			name = Shader;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B098AF4518F40BEA00A7C316 /* IGEApplication */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B098AF8018F40BEA00A7C316 /* Build configuration list for PBXNativeTarget "IGEApplication" */;
+			buildPhases = (
+				B098AF4218F40BEA00A7C316 /* Sources */,
+				B098AF4318F40BEA00A7C316 /* Frameworks */,
+				B098AF4418F40BEA00A7C316 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IGEApplication;
+			productName = IGEApplication;
+			productReference = B098AF4618F40BEA00A7C316 /* IGEApplication.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B098AF6E18F40BEA00A7C316 /* IGEApplicationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B098AF8318F40BEA00A7C316 /* Build configuration list for PBXNativeTarget "IGEApplicationTests" */;
+			buildPhases = (
+				B098AF6B18F40BEA00A7C316 /* Sources */,
+				B098AF6C18F40BEA00A7C316 /* Frameworks */,
+				B098AF6D18F40BEA00A7C316 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B098AF7518F40BEA00A7C316 /* PBXTargetDependency */,
+			);
+			name = IGEApplicationTests;
+			productName = IGEApplicationTests;
+			productReference = B098AF6F18F40BEA00A7C316 /* IGEApplicationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B098AF3E18F40BEA00A7C316 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Naoki.M;
+				TargetAttributes = {
+					B098AF6E18F40BEA00A7C316 = {
+						TestTargetID = B098AF4518F40BEA00A7C316;
+					};
+				};
+			};
+			buildConfigurationList = B098AF4118F40BEA00A7C316 /* Build configuration list for PBXProject "IGEApplication" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B098AF3D18F40BEA00A7C316;
+			productRefGroup = B098AF4718F40BEA00A7C316 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B098AF4518F40BEA00A7C316 /* IGEApplication */,
+				B098AF6E18F40BEA00A7C316 /* IGEApplicationTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B098AF4418F40BEA00A7C316 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B098AFD618F40D2D00A7C316 /* PrimitiveShader.fsh in Resources */,
+				B098AFD418F40D2D00A7C316 /* LineShader.fsh in Resources */,
+				B098AFD718F40D2D00A7C316 /* PrimitiveShader.vsh in Resources */,
+				B098AF6A18F40BEA00A7C316 /* Images.xcassets in Resources */,
+				B098AFD518F40D2D00A7C316 /* LineShader.vsh in Resources */,
+				B098AF5818F40BEA00A7C316 /* InfoPlist.strings in Resources */,
+				B098AF6118F40BEA00A7C316 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B098AF6D18F40BEA00A7C316 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B098AF7B18F40BEA00A7C316 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B098AF4218F40BEA00A7C316 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B098AFBE18F40D1600A7C316 /* IGESingleton.m in Sources */,
+				B098AFC018F40D1600A7C316 /* IGEUnit.m in Sources */,
+				B098AFB018F40D1600A7C316 /* IGECameraManager.m in Sources */,
+				B098AFAF18F40D1600A7C316 /* IGECamera.m in Sources */,
+				B098AFBF18F40D1600A7C316 /* IGETouchManager.m in Sources */,
+				B098AFCE18F40D2200A7C316 /* IGETestUnit.m in Sources */,
+				B098AFB318F40D1600A7C316 /* IGELight.m in Sources */,
+				B098AF6818F40BEA00A7C316 /* ViewController.m in Sources */,
+				B098AFBD18F40D1600A7C316 /* IGEShaderManager.m in Sources */,
+				B098AFBC18F40D1600A7C316 /* IGEShader.m in Sources */,
+				B098AFC118F40D1600A7C316 /* IGEUnitManager.m in Sources */,
+				B098AFB918F40D1600A7C316 /* IGERenderer.m in Sources */,
+				B098AFCB18F40D2200A7C316 /* IGEBootScene.m in Sources */,
+				B098AFB618F40D1600A7C316 /* IGEMath.m in Sources */,
+				B098AF5E18F40BEA00A7C316 /* AppDelegate.m in Sources */,
+				B098AF5A18F40BEA00A7C316 /* main.m in Sources */,
+				B098AFBA18F40D1600A7C316 /* IGEScene.m in Sources */,
+				B098AFB118F40D1600A7C316 /* IGEFps.m in Sources */,
+				B098AFBB18F40D1600A7C316 /* IGESceneManager.m in Sources */,
+				B098AFB818F40D1600A7C316 /* IGEProfiler.m in Sources */,
+				B098AFB418F40D1600A7C316 /* IGELightManager.m in Sources */,
+				B098AFB218F40D1600A7C316 /* IGEFramework.m in Sources */,
+				B098AFCD18F40D2200A7C316 /* IGEPrimitiveShader.m in Sources */,
+				B098AFB718F40D1600A7C316 /* IGEObject.m in Sources */,
+				B098AFCC18F40D2200A7C316 /* IGELineShader.m in Sources */,
+				B098AFB518F40D1600A7C316 /* IGELineStream.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B098AF6B18F40BEA00A7C316 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B098AF7D18F40BEA00A7C316 /* IGEApplicationTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B098AF7518F40BEA00A7C316 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B098AF4518F40BEA00A7C316 /* IGEApplication */;
+			targetProxy = B098AF7418F40BEA00A7C316 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B098AF5618F40BEA00A7C316 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B098AF5718F40BEA00A7C316 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B098AF5F18F40BEA00A7C316 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B098AF6018F40BEA00A7C316 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B098AF7918F40BEA00A7C316 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B098AF7A18F40BEA00A7C316 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B098AF7E18F40BEA00A7C316 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B098AF7F18F40BEA00A7C316 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B098AF8118F40BEA00A7C316 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "IGEApplication/IGEApplication-Prefix.pch";
+				INFOPLIST_FILE = "IGEApplication/IGEApplication-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B098AF8218F40BEA00A7C316 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "IGEApplication/IGEApplication-Prefix.pch";
+				INFOPLIST_FILE = "IGEApplication/IGEApplication-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		B098AF8418F40BEA00A7C316 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/IGEApplication.app/IGEApplication";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "IGEApplication/IGEApplication-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "IGEApplicationTests/IGEApplicationTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		B098AF8518F40BEA00A7C316 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/IGEApplication.app/IGEApplication";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "IGEApplication/IGEApplication-Prefix.pch";
+				INFOPLIST_FILE = "IGEApplicationTests/IGEApplicationTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B098AF4118F40BEA00A7C316 /* Build configuration list for PBXProject "IGEApplication" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B098AF7E18F40BEA00A7C316 /* Debug */,
+				B098AF7F18F40BEA00A7C316 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B098AF8018F40BEA00A7C316 /* Build configuration list for PBXNativeTarget "IGEApplication" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B098AF8118F40BEA00A7C316 /* Debug */,
+				B098AF8218F40BEA00A7C316 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B098AF8318F40BEA00A7C316 /* Build configuration list for PBXNativeTarget "IGEApplicationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B098AF8418F40BEA00A7C316 /* Debug */,
+				B098AF8518F40BEA00A7C316 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B098AF3E18F40BEA00A7C316 /* Project object */;
+}
