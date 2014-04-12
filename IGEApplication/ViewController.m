@@ -8,9 +8,9 @@
 
 #import "ViewController.h"
 #import "Library/IGEGlobal.h"
-#import "System/IGEAmbientShader.h"
-#import "System/IGELambertShader.h"
-#import "System/IGEBootScene.h"
+#import "App/IGEAmbientShader.h"
+#import "App/IGELambertShader.h"
+#import "App/IGEBootScene.h"
 
 @interface ViewController () {
 	IGEFramework* _framework;

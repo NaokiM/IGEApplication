@@ -55,7 +55,7 @@
     vertexShaderPath = [[NSBundle mainBundle] pathForResource:shaderName ofType:@"vsh"];
     GLuint vertexShader;
     if (![self compileShader:&vertexShader type:GL_VERTEX_SHADER file:vertexShaderPath]) {
-        NSLog(@"Failed to compile vertex shader");
+        NSLog(@"Failed to compile vertex shader:%@", shaderName);
         return NO;
     }
     
@@ -64,7 +64,7 @@
     flagmentShaderPath = [[NSBundle mainBundle] pathForResource:shaderName ofType:@"fsh"];
     GLuint flagmentShader;
     if (![self compileShader:&flagmentShader type:GL_FRAGMENT_SHADER file:flagmentShaderPath]) {
-        NSLog(@"Failed to compile fragment shader");
+        NSLog(@"Failed to compile fragment shader:%@", shaderName);
         return NO;
     }
     

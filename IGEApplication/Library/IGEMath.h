@@ -42,6 +42,12 @@ union _IGEVector4 {
 		float z;
 		float w;
 	};
+	struct {
+		float r;
+		float g;
+		float b;
+		float a;
+	};
 	float v[4];
 };
 typedef union _IGEVector4 IGEVector4;
@@ -68,3 +74,19 @@ union _IGEMatrix44 {
 	float m[4*4];
 };
 typedef union _IGEMatrix44 IGEMatrix44;
+
+
+// IGEVector3
+
+IGEVector3 IGEVector3Make(float x, float y, float z);
+IGEVector3 IGEVector3Add(IGEVector3 a, IGEVector3 b);
+IGEVector3 IGEVector3Sub(IGEVector3 a, IGEVector3 b);
+float IGEVector3Length(IGEVector3 a);
+float IGEVector3LengthSq(IGEVector3 a);
+IGEVector3 IGEVector3Normalize(IGEVector3 a);
+float IGEVector3Dot(IGEVector3 a, IGEVector3 b);
+IGEVector3 IGEVector3Cross(IGEVector3 a, IGEVector3 b);
+
+// IGEVector4
+
+IGEVector4 IGEVector4Make(float x, float y, float z, float w);

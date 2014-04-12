@@ -7,9 +7,10 @@
 
 #import "IGEBootScene.h"
 #import "IGETestUnit.h"
+#import "IGESphereUnit.h"
 
 @interface IGEBootScene () {
-	IGETestUnit* _testUnit;
+	IGESphereUnit* _sphereUnit;
 }
 
 @end
@@ -23,15 +24,15 @@
 		return nil;
 	}
 
-	_testUnit = [[IGETestUnit alloc] init];
-	[[IGEUnitManager getInstance] addUnit:_testUnit];
+	_sphereUnit = [[IGESphereUnit alloc] init];
+	[[IGEUnitManager getInstance] addUnit:_sphereUnit];
 
 	return self;
 }
 
 - (void)dealloc
 {
-	[[IGEUnitManager getInstance] removeUnit:_testUnit];
+	[[IGEUnitManager getInstance] removeUnit:_sphereUnit];
 
     [super dealloc];
 }

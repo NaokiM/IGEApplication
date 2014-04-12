@@ -13,7 +13,6 @@ attribute vec4 diffuseColor;
 uniform mat4 worldMatrix;
 uniform mat4 viewMatrix;
 uniform mat4 projectionMatrix;
-uniform mat4 projectionMatrix;
 uniform vec4 ambientLightColor;
 uniform vec4 diffuseLightColor;
 uniform vec3 diffuseLightVector;
@@ -29,4 +28,4 @@ void main()
 					(((diffuseColor * diffuseColor.w) + (diffuseLightColor * diffuseLightColor.w)) * nDotVP);
 
 	gl_Position = projectionMatrix * viewMatrix * worldMatrix * position;
-}
+ }
