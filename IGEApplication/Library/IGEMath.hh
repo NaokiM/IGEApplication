@@ -8,85 +8,167 @@
 #import "IGECommon.hh"
 
 //! ラジアン→度変換
-float radianToDegree(float radian);
+inline float radianToDegree(float radian) {
+	return radian * 180.0f / M_PI;
+}
 
 //! 度→ラジアン変換
-float degreeToRadian(float degree);
+inline float degreeToRadian(float degree) {
+	return degree * M_PI / 180.0f;
+}
 
 //! 2Dベクトル
-union _IGEVector2 {
-	struct {
-		float x;
-		float y;
+class IGEVector2 {
+public:
+	union {
+		struct {
+			float x;
+			float y;
+		};
+		float v[2];
 	};
-	float v[2];
 };
-typedef union _IGEVector2 IGEVector2;
 
 //! 3Dベクトル
-union _IGEVector3 {
-	struct {
-		float x;
-		float y;
-		float z;
+class IGEVector3 {
+public:
+	union {
+		struct {
+			float x;
+			float y;
+			float z;
+		};
+		float v[3];
 	};
-	float v[3];
 };
-typedef union _IGEVector3 IGEVector3;
 
 //! 4Dベクトル
-union _IGEVector4 {
-	struct {
-		float x;
-		float y;
-		float z;
-		float w;
+class IGEVector4 {
+public:
+	union {
+		struct {
+			float x;
+			float y;
+			float z;
+			float w;
+		};
+		struct {
+			float r;
+			float g;
+			float b;
+			float a;
+		};
+		float v[4];
 	};
-	struct {
-		float r;
-		float g;
-		float b;
-		float a;
-	};
-	float v[4];
 };
-typedef union _IGEVector4 IGEVector4;
 
 //! 3x3行列
-union _IGEMatrix33 {
-	struct {
-		float m00, m01, m02;
-		float m10, m11, m12;
-		float m20, m21, m22;
+class IGEMatrix33 {
+public:
+	union {
+		struct {
+			float m00, m01, m02;
+			float m10, m11, m12;
+			float m20, m21, m22;
+		};
+		float m[3*3];
 	};
-	float m[3*3];
 };
-typedef union _IGEMatrix33 IGEMatrix33;
 
 //! 4x4行列
-union _IGEMatrix44 {
-	struct {
-		float m00, m01, m02, m03;
-		float m10, m11, m12, m13;
-		float m20, m21, m22, m23;
-		float m30, m31, m32, m33;
+class IGEMatrix44 {
+public:
+	union {
+		struct {
+			float m00, m01, m02, m03;
+			float m10, m11, m12, m13;
+			float m20, m21, m22, m23;
+			float m30, m31, m32, m33;
+		};
+		float m[4*4];
 	};
-	float m[4*4];
 };
-typedef union _IGEMatrix44 IGEMatrix44;
-
 
 // IGEVector3
 
-IGEVector3 IGEVector3Make(float x, float y, float z);
-IGEVector3 IGEVector3Add(IGEVector3 a, IGEVector3 b);
-IGEVector3 IGEVector3Sub(IGEVector3 a, IGEVector3 b);
-float IGEVector3Length(IGEVector3 a);
-float IGEVector3LengthSq(IGEVector3 a);
-IGEVector3 IGEVector3Normalize(IGEVector3 a);
-float IGEVector3Dot(IGEVector3 a, IGEVector3 b);
-IGEVector3 IGEVector3Cross(IGEVector3 a, IGEVector3 b);
+inline IGEVector3 IGEVector3Make(float x, float y, float z) {
+	IGEVector3 temp;
+	temp.x = x;
+	temp.y = y;
+	temp.z = z;
+	return temp;
+}
+
+inline inline IGEVector3 operator + (IGEVector3 a, IGEVector3 b) {
+	IGEVector3 temp;
+	temp.x = a.x + b.x;
+	temp.y = a.y + b.y;
+	temp.z = a.z + b.z;
+	return temp;
+}
+
+inline inline IGEVector3 operator - (IGEVector3 a, IGEVector3 b) {
+	IGEVector3 temp;
+	temp.x = a.x - b.x;
+	temp.y = a.y - b.y;
+	temp.z = a.z - b.z;
+	return temp;
+}
+
+inline float IGEVector3Length(IGEVector3 a) {
+	return sqrtf(a.x * a.x + a.y * a.y + a.z * a.z);
+}
+
+inline float IGEVector3LengthSq(IGEVector3 a) {
+	return a.x * a.x + a.y * a.y + a.z * a.z;
+}
+
+inline IGEVector3 IGEVector3Normalize(IGEVector3 a) {
+	float invertLength = 1.0f / IGEVector3Length(a);
+	IGEVector3 temp;
+	temp.x = a.x * invertLength;
+	temp.y = a.y * invertLength;
+	temp.z = a.z * invertLength;
+	return temp;
+}
+
+inline float IGEVector3Dot(IGEVector3 a, IGEVector3 b) {
+	return a.x * b.x + a.y * b.y + a.z * b.z;
+}
+
+inline IGEVector3 IGEVector3Cross(IGEVector3 a, IGEVector3 b) {
+	IGEVector3 temp;
+	temp.x = b.y * a.z - b.z * a.y;
+	temp.y = b.z * a.x - b.x * a.z;
+	temp.z = b.x * a.y - b.y * a.x;
+	return temp;
+}
 
 // IGEVector4
 
-IGEVector4 IGEVector4Make(float x, float y, float z, float w);
+inline IGEVector4 IGEVector4Make(float x, float y, float z, float w) {
+	IGEVector4 temp;
+	temp.x = x;
+	temp.y = y;
+	temp.z = z;
+	temp.w = w;
+	return temp;
+}
+
+inline inline IGEVector4 operator + (IGEVector4 a, IGEVector4 b) {
+	IGEVector4 temp;
+	temp.x = a.x + b.x;
+	temp.y = a.y + b.y;
+	temp.z = a.z + b.z;
+	temp.w = a.w + b.w;
+	return temp;
+}
+
+inline inline IGEVector4 operator - (IGEVector4 a, IGEVector4 b) {
+	IGEVector4 temp;
+	temp.x = a.x - b.x;
+	temp.y = a.y - b.y;
+	temp.z = a.z - b.z;
+	temp.w = a.w - b.w;
+	return temp;
+}

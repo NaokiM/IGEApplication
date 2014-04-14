@@ -15,7 +15,7 @@
 		float x, y, z;
 		float r, g, b, a;
 	};
-	struct Vertex* _vertex;
+	Vertex* _vertex;
 	GLKVector4 _currentColor;
 	int _capacity;
 	int _size;

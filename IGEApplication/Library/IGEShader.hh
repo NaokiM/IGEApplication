@@ -11,7 +11,7 @@
 #define IGE_BUFFER_OFFSET(i)		((char*)NULL + (i))
 
 //! 頂点アトリビュート
-NS_ENUM(NSInteger, IGEVertexAttrib) {
+static NS_ENUM(NSInteger, IGEVertexAttrib) {
 	IGEVertexAttribPosition = 0,
 	IGEVertexAttribNormal,
 	IGEVertexAttribAmbientColor,
@@ -22,7 +22,7 @@ NS_ENUM(NSInteger, IGEVertexAttrib) {
 };
 
 //! シェーダユニフォーム
-NS_ENUM(NSInteger, IGEShaderUniform) {
+static NS_ENUM(NSInteger, IGEShaderUniform) {
 	IGEShaderUniformWorldMatrix = 0,
 	IGEShaderUniformViewMatrix,
 	IGEShaderUniformProjectionMatrix,

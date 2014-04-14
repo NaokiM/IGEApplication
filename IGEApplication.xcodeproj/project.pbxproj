@@ -21,7 +21,7 @@
 		B098AF5018F40BEA00A7C316 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B098AF4F18F40BEA00A7C316 /* GLKit.framework */; };
 		B098AF5218F40BEA00A7C316 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B098AF5118F40BEA00A7C316 /* OpenGLES.framework */; };
 		B098AF5818F40BEA00A7C316 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B098AF5618F40BEA00A7C316 /* InfoPlist.strings */; };
-		B098AF5A18F40BEA00A7C316 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B098AF5918F40BEA00A7C316 /* main.m */; };
+		B098AF5A18F40BEA00A7C316 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = B098AF5918F40BEA00A7C316 /* main.mm */; };
 		B098AF5E18F40BEA00A7C316 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = B098AF5D18F40BEA00A7C316 /* AppDelegate.mm */; };
 		B098AF6118F40BEA00A7C316 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B098AF5F18F40BEA00A7C316 /* Main.storyboard */; };
 		B098AF6818F40BEA00A7C316 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = B098AF6718F40BEA00A7C316 /* ViewController.mm */; };
@@ -34,10 +34,8 @@
 		B098AFAF18F40D1600A7C316 /* IGECamera.mm in Sources */ = {isa = PBXBuildFile; fileRef = B098AF8818F40D1600A7C316 /* IGECamera.mm */; };
 		B098AFB018F40D1600A7C316 /* IGECameraManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = B098AF8A18F40D1600A7C316 /* IGECameraManager.mm */; };
 		B098AFB118F40D1600A7C316 /* IGEFps.mm in Sources */ = {isa = PBXBuildFile; fileRef = B098AF8D18F40D1600A7C316 /* IGEFps.mm */; };
-		B098AFB218F40D1600A7C316 /* IGEFramework.mm in Sources */ = {isa = PBXBuildFile; fileRef = B098AF8F18F40D1600A7C316 /* IGEFramework.mm */; };
 		B098AFB318F40D1600A7C316 /* IGELight.mm in Sources */ = {isa = PBXBuildFile; fileRef = B098AF9218F40D1600A7C316 /* IGELight.mm */; };
 		B098AFB418F40D1600A7C316 /* IGELightManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = B098AF9418F40D1600A7C316 /* IGELightManager.mm */; };
-		B098AFB518F40D1600A7C316 /* IGELineStream.mm in Sources */ = {isa = PBXBuildFile; fileRef = B098AF9618F40D1600A7C316 /* IGELineStream.mm */; };
 		B098AFB618F40D1600A7C316 /* IGEMath.mm in Sources */ = {isa = PBXBuildFile; fileRef = B098AF9818F40D1600A7C316 /* IGEMath.mm */; };
 		B098AFB718F40D1600A7C316 /* IGEObject.mm in Sources */ = {isa = PBXBuildFile; fileRef = B098AF9A18F40D1600A7C316 /* IGEObject.mm */; };
 		B098AFB818F40D1600A7C316 /* IGEProfiler.mm in Sources */ = {isa = PBXBuildFile; fileRef = B098AF9C18F40D1600A7C316 /* IGEProfiler.mm */; };
@@ -54,6 +52,8 @@
 		B098AFD518F40D2D00A7C316 /* AmbientShader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = B098AFD118F40D2D00A7C316 /* AmbientShader.vsh */; };
 		B098AFD618F40D2D00A7C316 /* LambertShader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = B098AFD218F40D2D00A7C316 /* LambertShader.fsh */; };
 		B098AFD718F40D2D00A7C316 /* LambertShader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = B098AFD318F40D2D00A7C316 /* LambertShader.vsh */; };
+		B0E9CF2318FBE6600089946F /* IGELineStream.mm in Sources */ = {isa = PBXBuildFile; fileRef = B0E9CF2218FBE6600089946F /* IGELineStream.mm */; };
+		B0E9CF2818FBEA6C0089946F /* IGEFramework.mm in Sources */ = {isa = PBXBuildFile; fileRef = B0E9CF2618FBEA6C0089946F /* IGEFramework.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,7 +89,7 @@
 		B098AF5118F40BEA00A7C316 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		B098AF5518F40BEA00A7C316 /* IGEApplication-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IGEApplication-Info.plist"; sourceTree = "<group>"; };
 		B098AF5718F40BEA00A7C316 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		B098AF5918F40BEA00A7C316 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B098AF5918F40BEA00A7C316 /* main.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
 		B098AF5B18F40BEA00A7C316 /* IGEApplication-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IGEApplication-Prefix.pch"; sourceTree = "<group>"; };
 		B098AF5C18F40BEA00A7C316 /* AppDelegate.hh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = AppDelegate.hh; sourceTree = "<group>"; };
 		B098AF5D18F40BEA00A7C316 /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
@@ -106,18 +106,13 @@
 		B098AF8818F40D1600A7C316 /* IGECamera.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = IGECamera.mm; sourceTree = "<group>"; };
 		B098AF8918F40D1600A7C316 /* IGECameraManager.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = IGECameraManager.hh; sourceTree = "<group>"; };
 		B098AF8A18F40D1600A7C316 /* IGECameraManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = IGECameraManager.mm; sourceTree = "<group>"; };
-		B098AF8B18F40D1600A7C316 /* IGECommon.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = IGECommon.hh; sourceTree = "<group>"; };
 		B098AF8C18F40D1600A7C316 /* IGEFps.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = IGEFps.hh; sourceTree = "<group>"; };
 		B098AF8D18F40D1600A7C316 /* IGEFps.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = IGEFps.mm; sourceTree = "<group>"; };
-		B098AF8E18F40D1600A7C316 /* IGEFramework.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = IGEFramework.hh; sourceTree = "<group>"; };
-		B098AF8F18F40D1600A7C316 /* IGEFramework.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = IGEFramework.mm; sourceTree = "<group>"; };
-		B098AF9018F40D1600A7C316 /* IGEGlobal.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = IGEGlobal.hh; sourceTree = "<group>"; };
 		B098AF9118F40D1600A7C316 /* IGELight.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = IGELight.hh; sourceTree = "<group>"; };
 		B098AF9218F40D1600A7C316 /* IGELight.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = IGELight.mm; sourceTree = "<group>"; };
 		B098AF9318F40D1600A7C316 /* IGELightManager.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = IGELightManager.hh; sourceTree = "<group>"; };
 		B098AF9418F40D1600A7C316 /* IGELightManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = IGELightManager.mm; sourceTree = "<group>"; };
 		B098AF9518F40D1600A7C316 /* IGELineStream.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = IGELineStream.hh; sourceTree = "<group>"; };
-		B098AF9618F40D1600A7C316 /* IGELineStream.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = IGELineStream.mm; sourceTree = "<group>"; };
 		B098AF9718F40D1600A7C316 /* IGEMath.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = IGEMath.hh; sourceTree = "<group>"; };
 		B098AF9818F40D1600A7C316 /* IGEMath.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = IGEMath.mm; sourceTree = "<group>"; };
 		B098AF9918F40D1600A7C316 /* IGEObject.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = IGEObject.hh; sourceTree = "<group>"; };
@@ -146,6 +141,11 @@
 		B098AFD118F40D2D00A7C316 /* AmbientShader.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = AmbientShader.vsh; sourceTree = "<group>"; };
 		B098AFD218F40D2D00A7C316 /* LambertShader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = LambertShader.fsh; sourceTree = "<group>"; };
 		B098AFD318F40D2D00A7C316 /* LambertShader.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = LambertShader.vsh; sourceTree = "<group>"; };
+		B0E9CF2218FBE6600089946F /* IGELineStream.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = IGELineStream.mm; sourceTree = "<group>"; };
+		B0E9CF2418FBEA6C0089946F /* IGECommon.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = IGECommon.hh; sourceTree = "<group>"; };
+		B0E9CF2518FBEA6C0089946F /* IGEFramework.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = IGEFramework.hh; sourceTree = "<group>"; };
+		B0E9CF2618FBEA6C0089946F /* IGEFramework.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = IGEFramework.mm; sourceTree = "<group>"; };
+		B0E9CF2718FBEA6C0089946F /* IGEGlobal.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = IGEGlobal.hh; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -271,7 +271,7 @@
 			children = (
 				B098AF5518F40BEA00A7C316 /* IGEApplication-Info.plist */,
 				B098AF5618F40BEA00A7C316 /* InfoPlist.strings */,
-				B098AF5918F40BEA00A7C316 /* main.m */,
+				B098AF5918F40BEA00A7C316 /* main.mm */,
 				B098AF5B18F40BEA00A7C316 /* IGEApplication-Prefix.pch */,
 			);
 			name = "Supporting Files";
@@ -309,10 +309,9 @@
 				B098AFDA18F40F2100A7C316 /* Renderer */,
 				B098AFD918F40F1D00A7C316 /* Scene */,
 				B098AFD818F40F0400A7C316 /* Unit */,
-				B098AF9018F40D1600A7C316 /* IGEGlobal.hh */,
-				B098AF8B18F40D1600A7C316 /* IGECommon.hh */,
-				B098AF8E18F40D1600A7C316 /* IGEFramework.hh */,
-				B098AF8F18F40D1600A7C316 /* IGEFramework.mm */,
+				B0E9CF2418FBEA6C0089946F /* IGECommon.hh */,
+				B0E9CF2518FBEA6C0089946F /* IGEFramework.hh */,
+				B0E9CF2618FBEA6C0089946F /* IGEFramework.mm */,
 			);
 			path = Library;
 			sourceTree = "<group>";
@@ -333,6 +332,7 @@
 		B098AFD818F40F0400A7C316 /* Unit */ = {
 			isa = PBXGroup;
 			children = (
+				B0E9CF2718FBEA6C0089946F /* IGEGlobal.hh */,
 				B098AFAB18F40D1600A7C316 /* IGEUnit.hh */,
 				B098AFAC18F40D1600A7C316 /* IGEUnit.mm */,
 				B098AFAD18F40D1600A7C316 /* IGEUnitManager.hh */,
@@ -358,7 +358,7 @@
 				B098AF9D18F40D1600A7C316 /* IGERenderer.hh */,
 				B098AF9E18F40D1600A7C316 /* IGERenderer.mm */,
 				B098AF9518F40D1600A7C316 /* IGELineStream.hh */,
-				B098AF9618F40D1600A7C316 /* IGELineStream.mm */,
+				B0E9CF2218FBE6600089946F /* IGELineStream.mm */,
 			);
 			name = Renderer;
 			sourceTree = "<group>";
@@ -563,17 +563,17 @@
 				B098AFB918F40D1600A7C316 /* IGERenderer.mm in Sources */,
 				B098AFB618F40D1600A7C316 /* IGEMath.mm in Sources */,
 				B098AF5E18F40BEA00A7C316 /* AppDelegate.mm in Sources */,
-				B098AF5A18F40BEA00A7C316 /* main.m in Sources */,
+				B098AF5A18F40BEA00A7C316 /* main.mm in Sources */,
 				B0489B3818F59A8500E1C411 /* IGESphereUnit.mm in Sources */,
 				B098AFBA18F40D1600A7C316 /* IGEScene.mm in Sources */,
 				B098AFB118F40D1600A7C316 /* IGEFps.mm in Sources */,
+				B0E9CF2318FBE6600089946F /* IGELineStream.mm in Sources */,
 				B098AFBB18F40D1600A7C316 /* IGESceneManager.mm in Sources */,
 				B098AFB818F40D1600A7C316 /* IGEProfiler.mm in Sources */,
 				B098AFB418F40D1600A7C316 /* IGELightManager.mm in Sources */,
-				B098AFB218F40D1600A7C316 /* IGEFramework.mm in Sources */,
 				B0489B3118F599ED00E1C411 /* IGELambertShader.mm in Sources */,
+				B0E9CF2818FBEA6C0089946F /* IGEFramework.mm in Sources */,
 				B098AFB718F40D1600A7C316 /* IGEObject.mm in Sources */,
-				B098AFB518F40D1600A7C316 /* IGELineStream.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

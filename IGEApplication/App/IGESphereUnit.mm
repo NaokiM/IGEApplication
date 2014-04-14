@@ -6,7 +6,6 @@
 //
 
 #import "../Library/IGELineStream.hh"
-
 #import "IGESphereUnit.hh"
 
 struct VertexInfo {
@@ -85,8 +84,8 @@ struct VertexInfo {
 			IGEVector4 ambient = IGEVector4Make(0, 0, 0, 1);
 			IGEVector4 diffuse = IGEVector4Make(1, 1, 1, 1);
 
-			v0 = IGEVector3Sub(_vertexData[indexVertex+1].position, _vertexData[indexVertex+0].position);
-			v1 = IGEVector3Sub(_vertexData[indexVertex+2].position, _vertexData[indexVertex+0].position);
+			v0 = _vertexData[indexVertex+1].position - _vertexData[indexVertex+0].position;
+			v1 = _vertexData[indexVertex+2].position - _vertexData[indexVertex+0].position;
 
 			if (IGEVector3LengthSq(v0) <= 0) {
 				v0 = IGEVector3Make(0, 0, 1);
@@ -107,8 +106,8 @@ struct VertexInfo {
 			_vertexData[indexVertex+4].position = positionData[indexPosition+1];
 			_vertexData[indexVertex+5].position = positionData[indexPosition+(_horizontalDiv+1)+1];
 
-			v0 = IGEVector3Sub(_vertexData[indexVertex+4].position, _vertexData[indexVertex+3].position);
-			v1 = IGEVector3Sub(_vertexData[indexVertex+5].position, _vertexData[indexVertex+3].position);
+			v0 = _vertexData[indexVertex+4].position - _vertexData[indexVertex+3].position;
+			v1 = _vertexData[indexVertex+5].position - _vertexData[indexVertex+3].position;
 
 			if (IGEVector3LengthSq(v0) <= 0) {
 				v0 = IGEVector3Make(0, 0, 1);
