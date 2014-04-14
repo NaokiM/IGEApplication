@@ -1,5 +1,5 @@
 //
-//  main.m
+//  main.mm
 //  IGEApplication
 //
 //  Created by Naoki.M on 2014/04/08.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-#import "AppDelegate.h"
+#import "AppDelegate.hh"
 
 int main(int argc, char * argv[])
 {
