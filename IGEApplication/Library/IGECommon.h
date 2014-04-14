@@ -17,7 +17,7 @@
 #define IGE_ASSERT_MSG(exp, msg)	NSAssert((exp), msg)
 #define IGE_FATAL_ERROR(msg)		NSAssert(0, msg)
 #define IGE_VERIFY(exp)				IGE_ASSERT(exp)
-#define IGE_RETAIN_PRINT(obj, msg)	NSLog(@"%s retainCount:%lu¥n", msg, (unsigned long)[obj retainCount])
+#define IGE_RETAIN_PRINT(obj, msg)	NSLog(@"%s retainCount:%lu\n", msg, (unsigned long)[obj retainCount])
 #else
 #define IGE_ASSERT(exp)
 #define IGE_NULL_ASSERT(exp)

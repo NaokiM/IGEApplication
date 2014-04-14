@@ -74,7 +74,7 @@
 	}
 
 	glBindVertexArrayOES(_vertexArray);
-    glDrawArrays(GL_LINES, 0, _size*7);
+    glDrawArrays(GL_LINES, 0, _size);
 
 	_size = 0;
 }
@@ -89,6 +89,7 @@
 	_vertex[_size].b = _currentColor.b;
 	_vertex[_size].a = _currentColor.a;
 	++_size;
+	IGE_ASSERT(_size <= _capacity);
 
 	return self;
 }

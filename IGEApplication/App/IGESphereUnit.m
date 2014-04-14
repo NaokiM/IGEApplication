@@ -192,7 +192,7 @@ struct VertexInfo {
 	if (_rotate > 360) {
 		_rotate = 0;
 	}
-
+/*
 	for (int i = 0; i < _horizontalDiv * _verticalDiv * 3 * 2; ++i) {
 		int index = i;
 		GLKVector3 v0, v1;
@@ -204,6 +204,7 @@ struct VertexInfo {
 		v1.z = _vertexData[index].position.z + _vertexData[index].normal.z * 0.1f;
 		[[[_lineStream addColor:GLKVector4Make(1, 0, 0, 1)] addPosition:v0] addPosition:v1];
 	}
+*/
 }
 
 - (void)render

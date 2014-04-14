@@ -36,8 +36,9 @@ void main()
 	vec3 lightVector = normalize(-diffuseLightVector);
 	nDotVP = 2.0 * dot(normal, cameraVector);
 	vec3 reflectVector = -cameraVector + nDotVP * normal;
+	float reflectPower = 10.0;
 	
-	colorVarying = colorVarying + pow(max(0.0, dot(lightVector, reflectVector)), 10.0);
+	colorVarying = colorVarying + pow(max(0.0, dot(lightVector, reflectVector)), reflectPower);
 
 	gl_Position = projectionMatrix * viewMatrix * worldMatrix * position;
 }
