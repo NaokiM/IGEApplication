@@ -25,7 +25,7 @@ void main()
     float nDotVP = max(0.0, dot(normal, -diffuseLightVector));
 	
     colorVarying =	(ambientColor * ambientColor.w) * (ambientLightColor * ambientLightColor.w) +
-					(((diffuseColor * diffuseColor.w) + (diffuseLightColor * diffuseLightColor.w)) * nDotVP);
+					(((diffuseColor * diffuseColor.w) * (diffuseLightColor * diffuseLightColor.w)) * nDotVP);
 
 	gl_Position = projectionMatrix * viewMatrix * worldMatrix * position;
  }

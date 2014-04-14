@@ -13,6 +13,7 @@ struct VertexInfo {
 	IGEVector3 position;
 	IGEVector3 normal;
 	IGEVector4 ambient;
+	IGEVector4 diffuse;
 };
 
 @interface IGESphereUnit () {
@@ -41,7 +42,7 @@ struct VertexInfo {
 
 	self.cameraID = @"DefaultCamera".hash;
 	self.lightID = @"DefaultLight".hash;
-	self.shaderID = @"AmbientShader".hash;
+	self.shaderID = @"LambertShader".hash;
 
 	_horizontalDiv = 20;
 	_verticalDiv   = 20;
@@ -81,7 +82,8 @@ struct VertexInfo {
 
 			IGEVector3 v0, v1;
 			IGEVector3 normal;
-			IGEVector4 ambient = IGEVector4Make(1, 1, 1, 1);
+			IGEVector4 ambient = IGEVector4Make(0, 0, 0, 1);
+			IGEVector4 diffuse = IGEVector4Make(1, 1, 1, 1);
 
 			v0 = IGEVector3Sub(_vertexData[indexVertex+1].position, _vertexData[indexVertex+0].position);
 			v1 = IGEVector3Sub(_vertexData[indexVertex+2].position, _vertexData[indexVertex+0].position);
@@ -98,6 +100,7 @@ struct VertexInfo {
 			for (int i = 0; i < 3; ++i) {
 				_vertexData[indexVertex+0+i].normal = normal;
 				_vertexData[indexVertex+0+i].ambient = ambient;
+				_vertexData[indexVertex+0+i].diffuse = diffuse;
 			}
 			
 			_vertexData[indexVertex+3].position = positionData[indexPosition];
@@ -119,6 +122,7 @@ struct VertexInfo {
 			for (int i = 0; i < 3; ++i) {
 				_vertexData[indexVertex+3+i].normal = normal;
 				_vertexData[indexVertex+3+i].ambient = ambient;
+				_vertexData[indexVertex+3+i].diffuse = diffuse;
 			}
 		}
 	}
@@ -134,11 +138,13 @@ struct VertexInfo {
 	glBufferData(GL_ARRAY_BUFFER, _horizontalDiv * _verticalDiv * 3*2 * sizeof(struct VertexInfo), _vertexData, GL_STATIC_DRAW);
 	
 	glEnableVertexAttribArray(IGEVertexAttribPosition);
-	glVertexAttribPointer(IGEVertexAttribPosition, 3, GL_FLOAT, GL_FALSE, 10*sizeof(float), IGE_BUFFER_OFFSET(0*sizeof(float)));
+	glVertexAttribPointer(IGEVertexAttribPosition, 3, GL_FLOAT, GL_FALSE, 14*sizeof(float), IGE_BUFFER_OFFSET(0*sizeof(float)));
 	glEnableVertexAttribArray(IGEVertexAttribNormal);
-	glVertexAttribPointer(IGEVertexAttribNormal, 3, GL_FLOAT, GL_FALSE, 10*sizeof(float), IGE_BUFFER_OFFSET(3*sizeof(float)));
+	glVertexAttribPointer(IGEVertexAttribNormal, 3, GL_FLOAT, GL_FALSE, 14*sizeof(float), IGE_BUFFER_OFFSET(3*sizeof(float)));
 	glEnableVertexAttribArray(IGEVertexAttribAmbientColor);
-	glVertexAttribPointer(IGEVertexAttribAmbientColor, 4, GL_FLOAT, GL_FALSE, 10*sizeof(float), IGE_BUFFER_OFFSET(6*sizeof(float)));
+	glVertexAttribPointer(IGEVertexAttribAmbientColor, 4, GL_FLOAT, GL_FALSE, 14*sizeof(float), IGE_BUFFER_OFFSET(6*sizeof(float)));
+	glEnableVertexAttribArray(IGEVertexAttribDiffuseColor);
+	glVertexAttribPointer(IGEVertexAttribDiffuseColor, 4, GL_FLOAT, GL_FALSE, 14*sizeof(float), IGE_BUFFER_OFFSET(10*sizeof(float)));
 	
 	glBindVertexArrayOES(0);
 
@@ -175,13 +181,13 @@ struct VertexInfo {
 
 	IGELight* light = [[IGELightManager getInstance] findLightByID:self.lightID];
 	IGE_NULL_ASSERT(light);
-
+/*
 	GLKVector3 vector;
 	vector.x = sinf(degreeToRadian(_rotate));
 	vector.y = 0.0f;
 	vector.z = cosf(degreeToRadian(_rotate));
 	light.diffuseLightVector = vector;
-
+*/
 	_rotate += 30 * time;
 	if (_rotate > 360) {
 		_rotate = 0;
