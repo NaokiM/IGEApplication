@@ -98,6 +98,11 @@
         return NO;
     }
 
+	// clear uniforma locations.
+	for (int i = 0; i < IGEShaderUniformMax; ++i) {
+		_uniforms[i] = -1;
+	}
+	
     // Get uniform locations.
 	[self getUniformLocations:_program];
 
@@ -215,35 +220,62 @@
 
 - (void)setUniformWorldMatrix:(const GLKMatrix4)matrix
 {
+	if (_uniforms[IGEShaderUniformWorldMatrix] == -1) {
+		return;
+	}
     glUniformMatrix4fv(_uniforms[IGEShaderUniformWorldMatrix], 1, 0, matrix.m);
 }
 
 - (void)setUniformViewMatrix:(const GLKMatrix4)matrix
 {
+	if (_uniforms[IGEShaderUniformViewMatrix] == -1) {
+		return;
+	}
     glUniformMatrix4fv(_uniforms[IGEShaderUniformViewMatrix], 1, 0, matrix.m);
 }
 
 - (void)setUniformProjectionMatrix:(const GLKMatrix4)matrix
 {
+	if (_uniforms[IGEShaderUniformProjectionMatrix] == -1) {
+		return;
+	}
     glUniformMatrix4fv(_uniforms[IGEShaderUniformProjectionMatrix], 1, 0, matrix.m);
 }
 
 - (void)setUniformAmbientLightColor:(const GLKVector4)color
 {
+	if (_uniforms[IGEShaderUniformAmbientLightColor] == -1) {
+		return;
+	}
     glUniform4fv(_uniforms[IGEShaderUniformAmbientLightColor], 1, color.v);
 }
 
 - (void)setUniformDiffuseLightColor:(const GLKVector4)color
 {
+	if (_uniforms[IGEShaderUniformDiffuseLightColor] == -1) {
+		return;
+	}
     glUniform4fv(_uniforms[IGEShaderUniformDiffuseLightColor], 1, color.v);
 }
 
 - (void)setUniformDiffuseLightVector:(const GLKVector3)vector worldMatrix:(const GLKMatrix4)worldMatrix
 {
+	if (_uniforms[IGEShaderUniformDiffuseLightVector] == -1) {
+		return;
+	}
 	// ライトベクトルに逆ワールド行列を掛けてモデル空間のベクトルにしてシェーダへ渡しています
 	GLKVector3 temp = GLKMatrix4MultiplyVector3(GLKMatrix4Invert(worldMatrix, NULL), GLKVector3Normalize(vector));
-
     glUniform3fv(_uniforms[IGEShaderUniformDiffuseLightVector], 1, temp.v);
+}
+
+- (void)setUniformCameraPosition:(const GLKVector3)cameraPosition worldMatrix:(const GLKMatrix4)worldMatrix
+{
+	if (_uniforms[IGEShaderUniformCameraPosition] == -1) {
+		return;
+	}
+	// カメラ座標に逆ワールド行列を掛けてモデル空間の座標にしてシェーダへ渡しています
+	GLKVector3 temp = GLKMatrix4MultiplyVector3(GLKMatrix4Invert(worldMatrix, NULL), cameraPosition);
+    glUniform3fv(_uniforms[IGEShaderUniformCameraPosition], 1, temp.v);
 }
 
 @end

@@ -90,6 +90,7 @@
 		[shader setUniformAmbientLightColor:light.ambientLightColor];
 		[shader setUniformDiffuseLightColor:light.diffuseLightColor];
 		[shader setUniformDiffuseLightVector:light.diffuseLightVector worldMatrix:unit.worldMatrix];
+		[shader setUniformCameraPosition:camera.positon worldMatrix:unit.worldMatrix];
 
 		[unit render];
 	}

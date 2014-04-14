@@ -29,6 +29,7 @@ NS_ENUM(NSInteger, IGEShaderUniform) {
 	IGEShaderUniformAmbientLightColor,
 	IGEShaderUniformDiffuseLightColor,
 	IGEShaderUniformDiffuseLightVector,
+	IGEShaderUniformCameraPosition,
 	IGEShaderUniformMax
 };
 
@@ -48,5 +49,6 @@ NS_ENUM(NSInteger, IGEShaderUniform) {
 - (void)setUniformAmbientLightColor:(const GLKVector4)color;
 - (void)setUniformDiffuseLightColor:(const GLKVector4)color;
 - (void)setUniformDiffuseLightVector:(const GLKVector3)vector worldMatrix:(const GLKMatrix4)worldMatrix;
+- (void)setUniformCameraPosition:(const GLKVector3)cameraPosition worldMatrix:(const GLKMatrix4)worldMatrix;
 
 @end

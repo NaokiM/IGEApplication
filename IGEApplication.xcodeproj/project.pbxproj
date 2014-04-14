@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B015239118FB8DB500280AF2 /* IGEPhongShader.m in Sources */ = {isa = PBXBuildFile; fileRef = B015239018FB8DB500280AF2 /* IGEPhongShader.m */; };
+		B015239418FB8DCE00280AF2 /* PhongShader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = B015239218FB8DCE00280AF2 /* PhongShader.fsh */; };
+		B015239518FB8DCE00280AF2 /* PhongShader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = B015239318FB8DCE00280AF2 /* PhongShader.vsh */; };
 		B0489B2F18F599ED00E1C411 /* IGEAmbientShader.m in Sources */ = {isa = PBXBuildFile; fileRef = B0489B2818F599ED00E1C411 /* IGEAmbientShader.m */; };
 		B0489B3018F599ED00E1C411 /* IGEBootScene.m in Sources */ = {isa = PBXBuildFile; fileRef = B0489B2A18F599ED00E1C411 /* IGEBootScene.m */; };
 		B0489B3118F599ED00E1C411 /* IGELambertShader.m in Sources */ = {isa = PBXBuildFile; fileRef = B0489B2C18F599ED00E1C411 /* IGELambertShader.m */; };
@@ -64,6 +67,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B015238F18FB8DB500280AF2 /* IGEPhongShader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IGEPhongShader.h; sourceTree = "<group>"; };
+		B015239018FB8DB500280AF2 /* IGEPhongShader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IGEPhongShader.m; sourceTree = "<group>"; };
+		B015239218FB8DCE00280AF2 /* PhongShader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = PhongShader.fsh; sourceTree = "<group>"; };
+		B015239318FB8DCE00280AF2 /* PhongShader.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = PhongShader.vsh; sourceTree = "<group>"; };
 		B0489B2718F599ED00E1C411 /* IGEAmbientShader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IGEAmbientShader.h; sourceTree = "<group>"; };
 		B0489B2818F599ED00E1C411 /* IGEAmbientShader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IGEAmbientShader.m; sourceTree = "<group>"; };
 		B0489B2918F599ED00E1C411 /* IGEBootScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IGEBootScene.h; sourceTree = "<group>"; };
@@ -184,6 +191,8 @@
 				B0489B2818F599ED00E1C411 /* IGEAmbientShader.m */,
 				B0489B2B18F599ED00E1C411 /* IGELambertShader.h */,
 				B0489B2C18F599ED00E1C411 /* IGELambertShader.m */,
+				B015238F18FB8DB500280AF2 /* IGEPhongShader.h */,
+				B015239018FB8DB500280AF2 /* IGEPhongShader.m */,
 			);
 			name = Shader;
 			sourceTree = "<group>";
@@ -315,6 +324,8 @@
 				B098AFD018F40D2D00A7C316 /* AmbientShader.fsh */,
 				B098AFD318F40D2D00A7C316 /* LambertShader.vsh */,
 				B098AFD218F40D2D00A7C316 /* LambertShader.fsh */,
+				B015239318FB8DCE00280AF2 /* PhongShader.vsh */,
+				B015239218FB8DCE00280AF2 /* PhongShader.fsh */,
 			);
 			path = Shaders;
 			sourceTree = "<group>";
@@ -509,7 +520,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B098AFD618F40D2D00A7C316 /* LambertShader.fsh in Resources */,
+				B015239418FB8DCE00280AF2 /* PhongShader.fsh in Resources */,
 				B098AFD418F40D2D00A7C316 /* AmbientShader.fsh in Resources */,
+				B015239518FB8DCE00280AF2 /* PhongShader.vsh in Resources */,
 				B098AFD718F40D2D00A7C316 /* LambertShader.vsh in Resources */,
 				B098AF6A18F40BEA00A7C316 /* Images.xcassets in Resources */,
 				B098AFD518F40D2D00A7C316 /* AmbientShader.vsh in Resources */,
@@ -544,6 +557,7 @@
 				B098AFB318F40D1600A7C316 /* IGELight.m in Sources */,
 				B098AF6818F40BEA00A7C316 /* ViewController.m in Sources */,
 				B098AFBD18F40D1600A7C316 /* IGEShaderManager.m in Sources */,
+				B015239118FB8DB500280AF2 /* IGEPhongShader.m in Sources */,
 				B098AFBC18F40D1600A7C316 /* IGEShader.m in Sources */,
 				B098AFC118F40D1600A7C316 /* IGEUnitManager.m in Sources */,
 				B098AFB918F40D1600A7C316 /* IGERenderer.m in Sources */,

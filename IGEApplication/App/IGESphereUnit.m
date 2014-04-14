@@ -42,7 +42,7 @@ struct VertexInfo {
 
 	self.cameraID = @"DefaultCamera".hash;
 	self.lightID = @"DefaultLight".hash;
-	self.shaderID = @"LambertShader".hash;
+	self.shaderID = @"PhongShader".hash;
 
 	_horizontalDiv = 20;
 	_verticalDiv   = 20;

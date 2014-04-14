@@ -10,6 +10,7 @@
 #import "Library/IGEGlobal.h"
 #import "App/IGEAmbientShader.h"
 #import "App/IGELambertShader.h"
+#import "App/IGEPhongShader.h"
 #import "App/IGEBootScene.h"
 
 @interface ViewController () {
@@ -49,8 +50,8 @@
 	
 	// ライトの作成と追加
 	IGELight* light = [[IGELight alloc] initWithName:@"DefaultLight"];
-	light.diffuseLightColor = GLKVector4Make(0.5f, 0.5f, 0.5f, 1);
-	light.diffuseLightVector = GLKVector3Make(0, 0, -1);
+	light.diffuseLightColor = GLKVector4Make(0.0f, 0.0f, 0.5f, 1);
+	light.diffuseLightVector = GLKVector3Make(0, -1, -1);
 	IGE_NULL_ASSERT(light);
 	[[IGELightManager getInstance] addLight:light];
 	
@@ -60,6 +61,9 @@
 	IGE_NULL_ASSERT(shader);
 	[[IGEShaderManager getInstance] addShader:shader];
 	shader = [[IGELambertShader alloc] initWithName:@"LambertShader"];
+	IGE_NULL_ASSERT(shader);
+	[[IGEShaderManager getInstance] addShader:shader];
+	shader = [[IGEPhongShader alloc] initWithName:@"PhongShader"];
 	IGE_NULL_ASSERT(shader);
 	[[IGEShaderManager getInstance] addShader:shader];
 	
