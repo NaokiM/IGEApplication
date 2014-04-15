@@ -54,6 +54,8 @@
 		B098AFD718F40D2D00A7C316 /* LambertShader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = B098AFD318F40D2D00A7C316 /* LambertShader.vsh */; };
 		B0E9CF2318FBE6600089946F /* IGELineStream.mm in Sources */ = {isa = PBXBuildFile; fileRef = B0E9CF2218FBE6600089946F /* IGELineStream.mm */; };
 		B0E9CF2818FBEA6C0089946F /* IGEFramework.mm in Sources */ = {isa = PBXBuildFile; fileRef = B0E9CF2618FBEA6C0089946F /* IGEFramework.mm */; };
+		B0E9CF2D18FCF1400089946F /* IGEMatrix.mm in Sources */ = {isa = PBXBuildFile; fileRef = B0E9CF2A18FCF1400089946F /* IGEMatrix.mm */; };
+		B0E9CF2E18FCF1400089946F /* IGEVector.mm in Sources */ = {isa = PBXBuildFile; fileRef = B0E9CF2C18FCF1400089946F /* IGEVector.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -146,6 +148,10 @@
 		B0E9CF2518FBEA6C0089946F /* IGEFramework.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = IGEFramework.hh; sourceTree = "<group>"; };
 		B0E9CF2618FBEA6C0089946F /* IGEFramework.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = IGEFramework.mm; sourceTree = "<group>"; };
 		B0E9CF2718FBEA6C0089946F /* IGEGlobal.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = IGEGlobal.hh; sourceTree = "<group>"; };
+		B0E9CF2918FCF1400089946F /* IGEMatrix.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = IGEMatrix.hh; sourceTree = "<group>"; };
+		B0E9CF2A18FCF1400089946F /* IGEMatrix.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = IGEMatrix.mm; sourceTree = "<group>"; };
+		B0E9CF2B18FCF1400089946F /* IGEVector.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = IGEVector.hh; sourceTree = "<group>"; };
+		B0E9CF2C18FCF1400089946F /* IGEVector.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = IGEVector.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -439,6 +445,10 @@
 			children = (
 				B098AF9718F40D1600A7C316 /* IGEMath.hh */,
 				B098AF9818F40D1600A7C316 /* IGEMath.mm */,
+				B0E9CF2B18FCF1400089946F /* IGEVector.hh */,
+				B0E9CF2C18FCF1400089946F /* IGEVector.mm */,
+				B0E9CF2918FCF1400089946F /* IGEMatrix.hh */,
+				B0E9CF2A18FCF1400089946F /* IGEMatrix.mm */,
 			);
 			name = Math;
 			sourceTree = "<group>";
@@ -551,6 +561,8 @@
 				B098AFC018F40D1600A7C316 /* IGEUnit.mm in Sources */,
 				B098AFB018F40D1600A7C316 /* IGECameraManager.mm in Sources */,
 				B098AFAF18F40D1600A7C316 /* IGECamera.mm in Sources */,
+				B0E9CF2D18FCF1400089946F /* IGEMatrix.mm in Sources */,
+				B0E9CF2E18FCF1400089946F /* IGEVector.mm in Sources */,
 				B0489B3218F599ED00E1C411 /* IGETestUnit.mm in Sources */,
 				B098AFBF18F40D1600A7C316 /* IGETouchManager.mm in Sources */,
 				B0489B2F18F599ED00E1C411 /* IGEAmbientShader.mm in Sources */,

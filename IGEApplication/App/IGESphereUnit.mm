@@ -94,7 +94,7 @@ struct VertexInfo {
 				v1 = IGEVector3Make(1, 0, 0);
 			}
 			
-			normal = IGEVector3Normalize(IGEVector3Cross(v1, v0));
+			normal = IGEVector3Normalize(IGEVector3CrossProduct(v0, v1));
 
 			for (int i = 0; i < 3; ++i) {
 				_vertexData[indexVertex+0+i].normal = normal;
@@ -116,7 +116,7 @@ struct VertexInfo {
 				v1 = IGEVector3Make(1, 0, 0);
 			}
 			
-			normal = IGEVector3Normalize(IGEVector3Cross(v1, v0));
+			normal = IGEVector3Normalize(IGEVector3CrossProduct(v0, v1));
 			
 			for (int i = 0; i < 3; ++i) {
 				_vertexData[indexVertex+3+i].normal = normal;
@@ -178,9 +178,10 @@ struct VertexInfo {
 	self.worldMatrix = GLKMatrix4Multiply(GLKMatrix4Multiply(xRotateMatrix, yRotateMatrix), xTranslateMatrix);
 	self.worldMatrix = yRotateMatrix;
 
+/*
 	IGELight* light = [[IGELightManager getInstance] findLightByID:self.lightID];
 	IGE_NULL_ASSERT(light);
-/*
+
 	GLKVector3 vector;
 	vector.x = sinf(degreeToRadian(_rotate));
 	vector.y = 0.0f;

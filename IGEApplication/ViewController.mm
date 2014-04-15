@@ -50,8 +50,9 @@
 	
 	// ライトの作成と追加
 	IGELight* light = [[IGELight alloc] initWithName:@"DefaultLight"];
-	light.diffuseLightColor = GLKVector4Make(0.0f, 0.0f, 0.5f, 1);
-	light.diffuseLightVector = GLKVector3Make(0, -1, -1);
+	light.ambientLightColor = GLKVector4Make(0.5f, 0.5f, 0.5f, 1.0f);
+	light.diffuseLightColor = GLKVector4Make(0.0f, 0.0f, 0.5f, 1.0f);
+	light.diffuseLightVector = GLKVector3Make(0.0f, -1.0f, -1.0f);
 	IGE_NULL_ASSERT(light);
 	[[IGELightManager getInstance] addLight:light];
 	
